@@ -95,3 +95,180 @@ Finished building: Lab01-GPIO-Output.hex
  
 Finished building: Lab01-GPIO-Output.list
  
+13:38:22 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:4: warning: implicit declaration of function 'HAL_GPIO_TooglePin'; did you mean 'HAL_GPIO_TogglePin'? [-Wimplicit-function-declaration]
+  100 |    HAL_GPIO_TooglePin(LED13_GPIO_Port,LED13_Pin);
+      |    ^~~~~~~~~~~~~~~~~~
+      |    HAL_GPIO_TogglePin
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:206:6: error: 'GPI0_Pin' undeclared (first use in this function); did you mean 'GPIO_Pin'?
+  206 |  if (GPI0_Pin == BT8_Pin) {
+      |      ^~~~~~~~
+      |      GPIO_Pin
+../Core/Src/main.c:206:6: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:209:3: warning: implicit declaration of function 'HAL_GPTO_WritePin'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_GPIO_WritePin
+../Core/Src/main.c:209:21: error: 'LEDS_GPIO_Port' undeclared (first use in this function); did you mean 'LED8_GPIO_Port'?
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |                     ^~~~~~~~~~~~~~
+      |                     LED8_GPIO_Port
+../Core/Src/main.c:209:37: error: 'LEDS_Pin' undeclared (first use in this function); did you mean 'LED9_Pin'?
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |                                     ^~~~~~~~
+      |                                     LED9_Pin
+../Core/Src/main.c:218:18: error: 'BT16_Pin' undeclared (first use in this function); did you mean 'BT10_Pin'?
+  218 |  if (GPI0_Pin == BT16_Pin) {
+      |                  ^~~~~~~~
+      |                  BT10_Pin
+../Core/Src/main.c:221:21: error: 'LED1_GPIO_Port' undeclared (first use in this function); did you mean 'LED13_GPIO_Port'?
+  221 |   HAL_GPTO_WritePin(LED1_GPIO_Port, LED10_Pin, GPIO_PIN_RESET);
+      |                     ^~~~~~~~~~~~~~
+      |                     LED13_GPIO_Port
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:39:30 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:206:6: error: 'GPI0_Pin' undeclared (first use in this function); did you mean 'GPIO_Pin'?
+  206 |  if (GPI0_Pin == BT8_Pin) {
+      |      ^~~~~~~~
+      |      GPIO_Pin
+../Core/Src/main.c:206:6: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:209:3: warning: implicit declaration of function 'HAL_GPTO_WritePin'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_GPIO_WritePin
+../Core/Src/main.c:209:21: error: 'LEDS_GPIO_Port' undeclared (first use in this function); did you mean 'LED8_GPIO_Port'?
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |                     ^~~~~~~~~~~~~~
+      |                     LED8_GPIO_Port
+../Core/Src/main.c:209:37: error: 'LEDS_Pin' undeclared (first use in this function); did you mean 'LED9_Pin'?
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |                                     ^~~~~~~~
+      |                                     LED9_Pin
+../Core/Src/main.c:218:18: error: 'BT16_Pin' undeclared (first use in this function); did you mean 'BT10_Pin'?
+  218 |  if (GPI0_Pin == BT16_Pin) {
+      |                  ^~~~~~~~
+      |                  BT10_Pin
+../Core/Src/main.c:221:21: error: 'LED1_GPIO_Port' undeclared (first use in this function); did you mean 'LED13_GPIO_Port'?
+  221 |   HAL_GPTO_WritePin(LED1_GPIO_Port, LED10_Pin, GPIO_PIN_RESET);
+      |                     ^~~~~~~~~~~~~~
+      |                     LED13_GPIO_Port
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:39:50 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:206:6: error: 'GPI0_Pin' undeclared (first use in this function); did you mean 'GPIO_Pin'?
+  206 |  if (GPI0_Pin == BT8_Pin) {
+      |      ^~~~~~~~
+      |      GPIO_Pin
+../Core/Src/main.c:206:6: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:209:3: warning: implicit declaration of function 'HAL_GPTO_WritePin'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_GPIO_WritePin
+../Core/Src/main.c:209:21: error: 'LEDS_GPIO_Port' undeclared (first use in this function); did you mean 'LED8_GPIO_Port'?
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |                     ^~~~~~~~~~~~~~
+      |                     LED8_GPIO_Port
+../Core/Src/main.c:209:37: error: 'LEDS_Pin' undeclared (first use in this function); did you mean 'LED9_Pin'?
+  209 |   HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |                                     ^~~~~~~~
+      |                                     LED9_Pin
+../Core/Src/main.c:221:21: error: 'LED1_GPIO_Port' undeclared (first use in this function); did you mean 'LED13_GPIO_Port'?
+  221 |   HAL_GPTO_WritePin(LED1_GPIO_Port, LED10_Pin, GPIO_PIN_RESET);
+      |                     ^~~~~~~~~~~~~~
+      |                     LED13_GPIO_Port
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:40:03 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:206:6: error: 'GPI0_Pin' undeclared (first use in this function); did you mean 'GPIO_Pin'?
+  206 |  if (GPI0_Pin == BT8_Pin) {
+      |      ^~~~~~~~
+      |      GPIO_Pin
+../Core/Src/main.c:206:6: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:209:3: warning: implicit declaration of function 'HAL_GPTO_WritePin'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+  209 |   HAL_GPTO_WritePin(LED8_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_GPIO_WritePin
+../Core/Src/main.c:209:37: error: 'LEDS_Pin' undeclared (first use in this function); did you mean 'LED9_Pin'?
+  209 |   HAL_GPTO_WritePin(LED8_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
+      |                                     ^~~~~~~~
+      |                                     LED9_Pin
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:40:57 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:206:6: error: 'GPI0_Pin' undeclared (first use in this function); did you mean 'GPIO_Pin'?
+  206 |  if (GPI0_Pin == BT8_Pin) {
+      |      ^~~~~~~~
+      |      GPIO_Pin
+../Core/Src/main.c:206:6: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:213:3: warning: implicit declaration of function 'HAL_GPTO_WritePin'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+  213 |   HAL_GPTO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_SET);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_GPIO_WritePin
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:41:07 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:213:3: warning: implicit declaration of function 'HAL_GPTO_WritePin'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+  213 |   HAL_GPTO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_SET);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_GPIO_WritePin
+../Core/Src/main.c:218:6: error: 'GPI0_Pin' undeclared (first use in this function); did you mean 'GPIO_Pin'?
+  218 |  if (GPI0_Pin == BT10_Pin) {
+      |      ^~~~~~~~
+      |      GPIO_Pin
+../Core/Src/main.c:218:6: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:41:29 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:215:3: warning: implicit declaration of function 'HAL_GPTO_WritePin'; did you mean 'HAL_GPIO_WritePin'? [-Wimplicit-function-declaration]
+  215 |   HAL_GPTO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_RESET);
+      |   ^~~~~~~~~~~~~~~~~
+      |   HAL_GPIO_WritePin
+arm-none-eabi-gcc -o "Lab01-GPIO-Output.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\1magistr\stm32\Lab01-GPIO-Output\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab01-GPIO-Output.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\programm\stm32cubeide_1.11.2\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `HAL_GPIO_EXTI_Callback':
+D:/1magistr/stm32/Lab01-GPIO-Output/Debug/../Core/Src/main.c:215: undefined reference to `HAL_GPTO_WritePin'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:67: Lab01-GPIO-Output.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:41:47 **** Incremental Build of configuration Debug for project Lab01-GPIO-Output ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Lab01-GPIO-Output.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\1magistr\stm32\Lab01-GPIO-Output\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab01-GPIO-Output.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab01-GPIO-Output.elf
+ 
+arm-none-eabi-size   Lab01-GPIO-Output.elf 
+arm-none-eabi-objdump -h -S  Lab01-GPIO-Output.elf  > "Lab01-GPIO-Output.list"
+arm-none-eabi-objcopy  -O ihex  Lab01-GPIO-Output.elf  "Lab01-GPIO-Output.hex"
+   text	   data	    bss	    dec	    hex	filename
+   6260	     20	   1572	   7852	   1eac	Lab01-GPIO-Output.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab01-GPIO-Output.hex
+ 
+Finished building: Lab01-GPIO-Output.list
+ 

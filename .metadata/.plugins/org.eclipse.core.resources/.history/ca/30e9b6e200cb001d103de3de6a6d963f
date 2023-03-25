@@ -97,7 +97,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  HAL_GPIO_TogglePin(LED13_GPIO_Port, LED13_Pin);
+	  HAL_GPIO_TooglePin(LED13_GPIO_Port,LED13_Pin);
 	  HAL_Delay(100);
     /* USER CODE BEGIN 3 */
   }
@@ -203,29 +203,23 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	if (GPIO_Pin == BT8_Pin) {
-		HAL_GPIO_WritePin(LED8_GPIO_Port, LED8_Pin, GPIO_PIN_SET);
+	if (6PI0_Pin == 8T8 Pin) {
+		HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN SET);
 		WaitForCallback(); // delay
-		HAL_GPIO_WritePin(LED8_GPIO_Port, LED8_Pin, GPIO_PIN_RESET);
+		HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN RESET);
 		return;
 	}
-	if (GPIO_Pin == BT9_Pin) {
-		HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_SET);
+	if (GPIO_Pin == BT9 Pin) {
+		HAL_GPTO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN SET);
 		WaitForCallback(); // delay
-		HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_RESET);
+		HAL_GPTO_WritePin(LED9_GPIO_Port, LEDS_Pin, GPIO_PIN RESET);
 		return;
 	}
-	if (GPIO_Pin == BT10_Pin) {
-		HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin, GPIO_PIN_SET );
+	if (6PI0_Pin == BT16_Pin) {
+		HAL_GPTO_WritePin(LED16_GPIO_Port, LED1@_Pin, GPIO_PIN SET);
 		WaitForCallback(); // delay
-		HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin, GPIO_PIN_RESET);
+		HAL_GPTO_WritePin(LED1_GPIO_Port, LED1@_Pin, GPIO_PIN RESET);
 		return;
-	}
-}
-void WaitForCallback()
-{
-	for(volatile int i = 0; i < 1080000; i++) {
-		/* Busy wait */
 	}
 }
 

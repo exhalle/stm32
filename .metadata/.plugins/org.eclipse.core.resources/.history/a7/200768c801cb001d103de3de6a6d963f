@@ -203,22 +203,22 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	if (GPIO_Pin == BT8_Pin) {
+	if (GPI0_Pin == BT8_Pin) {
 		HAL_GPIO_WritePin(LED8_GPIO_Port, LED8_Pin, GPIO_PIN_SET);
 		WaitForCallback(); // delay
-		HAL_GPIO_WritePin(LED8_GPIO_Port, LED8_Pin, GPIO_PIN_RESET);
+		HAL_GPTO_WritePin(LEDS_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
 		return;
 	}
 	if (GPIO_Pin == BT9_Pin) {
-		HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_SET);
+		HAL_GPTO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_SET);
 		WaitForCallback(); // delay
-		HAL_GPIO_WritePin(LED9_GPIO_Port, LED9_Pin, GPIO_PIN_RESET);
+		HAL_GPTO_WritePin(LED9_GPIO_Port, LEDS_Pin, GPIO_PIN_RESET);
 		return;
 	}
-	if (GPIO_Pin == BT10_Pin) {
-		HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin, GPIO_PIN_SET );
+	if (GPI0_Pin == BT10_Pin) {
+		HAL_GPTO_WritePin(LED10_GPIO_Port, LED10_Pin, GPIO_PIN_SET );
 		WaitForCallback(); // delay
-		HAL_GPIO_WritePin(LED10_GPIO_Port, LED10_Pin, GPIO_PIN_RESET);
+		HAL_GPTO_WritePin(LED1_GPIO_Port, LED10_Pin, GPIO_PIN_RESET);
 		return;
 	}
 }

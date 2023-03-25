@@ -636,3 +636,64 @@
 2023-03-25 12:24:17,333 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2645mS.
 2023-03-25 12:24:17,334 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 1mS.
 2023-03-25 12:24:17,337 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-25 12:36:55,101 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 634076720 Bytes (1073741824)
+2023-03-25 12:36:55,359 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 654984848 Bytes (1073741824)
+2023-03-25 12:36:55,736 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-25 12:36:55,737 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-25 12:36:55,737 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-25 12:36:55,738 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-25 12:36:55,738 [INFO] CodeGenerator:692 - code generatio: config db path: C:\PROGRAMM\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-25 12:36:55,998 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\license.tmp_save
+2023-03-25 12:36:56,204 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\license.tmp
+2023-03-25 12:36:56,276 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\gpio.tmp_save
+2023-03-25 12:36:56,465 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\gpio.tmp
+2023-03-25 12:36:56,507 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_it.c_save
+2023-03-25 12:36:56,806 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_it.c
+2023-03-25 12:36:56,822 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_it.h_save
+2023-03-25 12:36:56,919 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_it.h
+2023-03-25 12:36:56,940 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_hal_msp.c_save
+2023-03-25 12:36:57,065 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_hal_msp.c
+2023-03-25 12:36:57,068 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\system.tmp_save
+2023-03-25 12:36:57,152 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\system.tmp
+2023-03-25 12:36:57,170 [INFO] CodeEngine:303 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-03-25 12:36:57,311 [INFO] CodeEngine:327 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_hal_conf.h
+2023-03-25 12:36:57,364 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\main.h_save
+2023-03-25 12:36:57,530 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\main.h
+2023-03-25 12:36:57,550 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\main.c_save
+2023-03-25 12:36:57,785 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\main.c
+2023-03-25 12:36:59,024 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 351mS.
+2023-03-25 12:36:59,028 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-25 12:36:59,346 [INFO] ConfigFileManager:1396 - The Die is : DIE423
+2023-03-25 12:37:01,755 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2727mS.
+2023-03-25 12:37:01,756 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-25 12:37:01,759 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-25 12:49:05,277 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 734769536 Bytes (1073741824)
+2023-03-25 12:49:05,605 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-25 12:49:05,605 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-03-25 12:49:05,605 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-25 12:49:05,606 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-25 12:49:05,606 [INFO] CodeGenerator:692 - code generatio: config db path: C:\PROGRAMM\STM32CubeIDE_1.11.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.7.0.202301130839\\db\
+2023-03-25 12:49:05,896 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\license.tmp_save
+2023-03-25 12:49:06,099 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\license.tmp
+2023-03-25 12:49:06,117 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\gpio.tmp_save
+2023-03-25 12:49:06,255 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\gpio.tmp
+2023-03-25 12:49:06,285 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_it.c_save
+2023-03-25 12:49:06,555 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_it.c
+2023-03-25 12:49:06,567 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_it.h_save
+2023-03-25 12:49:06,660 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_it.h
+2023-03-25 12:49:06,679 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_hal_msp.c_save
+2023-03-25 12:49:06,822 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\stm32f4xx_hal_msp.c
+2023-03-25 12:49:06,826 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\system.tmp_save
+2023-03-25 12:49:06,912 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\MXTmpFiles\system.tmp
+2023-03-25 12:49:06,931 [INFO] CodeEngine:303 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_hal_conf.h_save
+2023-03-25 12:49:07,045 [INFO] CodeEngine:327 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\stm32f4xx_hal_conf.h
+2023-03-25 12:49:07,139 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\main.h_save
+2023-03-25 12:49:07,280 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Inc\main.h
+2023-03-25 12:49:07,292 [INFO] CodeEngine:247 - oldGeneratedFile, D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\main.c_save
+2023-03-25 12:49:07,447 [INFO] CodeEngine:271 - Generated code: D:\1magistr\stm32\Lab01-GPIO-Output\Core\Src\main.c
+2023-03-25 12:49:08,610 [INFO] ProjectBuilder:2919 - Time for Copy HAL[1] : 385mS.
+2023-03-25 12:49:08,614 [INFO] ProjectBuilder:4183 - Project Generator version: 3.18.0-B7
+2023-03-25 12:49:08,915 [INFO] ConfigFileManager:1396 - The Die is : DIE423
+2023-03-25 12:49:10,851 [INFO] ProjectBuilder:4351 - Time for Generating toolchain IDE Files: 2237mS.
+2023-03-25 12:49:10,852 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
+2023-03-25 12:49:10,855 [INFO] ProjectBuilder:2790 - Time for Copy CMSIS : 0mS.
